@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para princess karlita</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #05030a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  .card {
+    width: 320px;
+    background: #140b1a;
+    border-radius: 24px;
+    padding: 26px 18px 30px;
+    box-shadow: 0 0 40px rgba(255,140,200,0.12), 0 0 0 1px rgba(255,255,255,0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  .glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 15%, rgba(255,150,205,0.18), transparent 60%);
+    pointer-events: none;
+  }
+  .title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    color: #ffb6d9;
+    letter-spacing: 0.5px;
+  }
+  .title svg { vertical-align: -3px; margin-left: 4px; animation: pulse 1.6s ease-in-out infinite; }
+  .msg {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: #ffd3e8;
+    margin-top: 4px;
+  }
+  .footer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 16px;
+  }
+  .footer span { font-size: 13px; color: #c9c2d0; }
+  .heart-icon { animation: pulse 1.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  svg.bouquet { position: relative; z-index: 1; display: block; margin: 4px auto 0; }
+  .flower {
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+  }
+  .sway1 { animation: sway1 3.8s ease-in-out infinite; }
+  .sway2 { animation: sway2 4.2s ease-in-out infinite; }
+  .sway3 { animation: sway1 4.0s ease-in-out infinite 0.4s; }
+  .sway4 { animation: sway2 3.6s ease-in-out infinite 0.6s; }
+  .sway5 { animation: sway1 4.4s ease-in-out infinite 0.2s; }
+
+  @keyframes sway1 { 0%,100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
+  @keyframes sway2 { 0%,100% { transform: rotate(5deg); } 50% { transform: rotate(-5deg); } }
+  @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.18); } }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="glow"></div>
+
+  <div class="title">
+    princess karlita
+    <svg width="18" height="18" viewBox="0 0 24 24">
+      <path d="M12 21s-7.2-4.6-9.6-9.2C.7 8.3 2.4 4.8 6 4.2c2.1-.4 4 .6 6 3 2-2.4 3.9-3.4 6-3 3.6.6 5.3 4.1 3.6 7.6C19.2 16.4 12 21 12 21z" fill="#ff8fc0"/>
+    </svg>
+  </div>
+
+  <svg class="bouquet" width="100%" height="auto" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+
+    <ellipse cx="150" cy="296" rx="72" ry="10" fill="#000000" opacity="0.35"></ellipse>
+
+    <path d="M108 205 L192 205 L176 292 L124 292 Z" fill="#e9d9ec"></path>
+    <path d="M108 205 L192 205 L176 292 L150 285 L124 292 Z" fill="#f6ecf7"></path>
+    <path d="M150 205 L150 285 L176 292 L192 205 Z" fill="#d9c2de"></path>
+    <path d="M126 210 L108 205 L124 292 L138 286 Z" fill="#c9aed0"></path>
+    <path d="M174 210 L192 205 L176 292 L162 286 Z" fill="#c9aed0"></path>
+
+    <g fill="none" stroke="#3f7d4a" stroke-width="3" stroke-linecap="round">
+      <path d="M126 214 C124 172 128 138 112 100"></path>
+      <path d="M140 212 C140 166 142 128 138 84"></path>
+      <path d="M160 212 C160 166 158 126 164 82"></path>
+      <path d="M174 214 C176 172 172 140 188 102"></path>
+      <path d="M150 210 C150 162 150 118 150 68"></path>
+    </g>
+    <g fill="#4a8f56">
+      <path d="M126 178 C107 172 98 160 96 146 C115 149 126 160 128 178 Z"></path>
+      <path d="M174 178 C193 172 202 160 204 146 C185 149 174 160 172 178 Z"></path>
+      <path d="M140 160 C125 158 114 148 112 138 C127 138 138 146 142 160 Z"></path>
+    </g>
+
+    <!-- peony template used 5 times with different palettes/positions -->
+
+    <g transform="translate(112,100)">
+      <g class="flower sway1">
+        <g fill="#f38fc0" opacity="0.95">
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(0)"></ellipse>
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(40)"></ellipse>
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(80)"></ellipse>
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(120)"></ellipse>
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(160)"></ellipse>
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(200)"></ellipse>
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(240)"></ellipse>
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(280)"></ellipse>
+          <ellipse cx="0" cy="-18" rx="9" ry="16" transform="rotate(320)"></ellipse>
+        </g>
+        <g fill="#ef78b4" opacity="0.95">
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(20)"></ellipse>
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(60)"></ellipse>
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(100)"></ellipse>
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(140)"></ellipse>
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(180)"></ellipse>
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(220)"></ellipse>
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(260)"></ellipse>
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(300)"></ellipse>
+          <ellipse cx="0" cy="-12" rx="7" ry="12" transform="rotate(340)"></ellipse>
+        </g>
+        <g fill="#ffd0e8">
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(10)"></ellipse>
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(90)"></ellipse>
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(170)"></ellipse>
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(250)"></ellipse>
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(330)"></ellipse>
+        </g>
+        <circle cx="0" cy="-8" r="3.5" fill="#c04080"></circle>
+      </g>
+    </g>
+
+    <g transform="translate(140,84)">
+      <g class="flower sway2">
+        <g fill="#f7a3cc" opacity="0.95">
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(0)"></ellipse>
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(40)"></ellipse>
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(80)"></ellipse>
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(120)"></ellipse>
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(160)"></ellipse>
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(200)"></ellipse>
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(240)"></ellipse>
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(280)"></ellipse>
+          <ellipse cx="0" cy="-20" rx="10" ry="18" transform="rotate(320)"></ellipse>
+        </g>
+        <g fill="#ef78b4" opacity="0.95">
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(20)"></ellipse>
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(60)"></ellipse>
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(100)"></ellipse>
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(140)"></ellipse>
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(180)"></ellipse>
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(220)"></ellipse>
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(260)"></ellipse>
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(300)"></ellipse>
+          <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(340)"></ellipse>
+        </g>
+        <g fill="#ffc0e0">
+          <ellipse cx="0" cy="-9" rx="5.5" ry="7.5" transform="rotate(10)"></ellipse>
+          <ellipse cx="0" cy="-9" rx="5.5" ry="7.5" transform="rotate(90)"></ellipse>
+          <ellipse cx="0" cy="-9" rx="5.5" ry="7.5" transform="rotate(170)"></ellipse>
+          <ellipse cx="0" cy="-9" rx="5.5" ry="7.5" transform="rotate(250)"></ellipse>
+          <ellipse cx="0" cy="-9" rx="5.5" ry="7.5" transform="rotate(330)"></ellipse>
+        </g>
+        <circle cx="0" cy="-9" r="4" fill="#c04080"></circle>
+      </g>
+    </g>
+
+    <g transform="translate(164,82)">
+      <g class="flower sway3">
+        <g fill="#f38fc0" opacity="0.95">
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(0)"></ellipse>
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(40)"></ellipse>
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(80)"></ellipse>
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(120)"></ellipse>
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(160)"></ellipse>
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(200)"></ellipse>
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(240)"></ellipse>
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(280)"></ellipse>
+          <ellipse cx="0" cy="-19" rx="9.5" ry="17" transform="rotate(320)"></ellipse>
+        </g>
+        <g fill="#e964a6" opacity="0.95">
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(20)"></ellipse>
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(60)"></ellipse>
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(100)"></ellipse>
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(140)"></ellipse>
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(180)"></ellipse>
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(220)"></ellipse>
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(260)"></ellipse>
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(300)"></ellipse>
+          <ellipse cx="0" cy="-12.5" rx="7" ry="12.5" transform="rotate(340)"></ellipse>
+        </g>
+        <g fill="#fca9d4">
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(10)"></ellipse>
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(90)"></ellipse>
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(170)"></ellipse>
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(250)"></ellipse>
+          <ellipse cx="0" cy="-8" rx="5" ry="7" transform="rotate(330)"></ellipse>
+        </g>
+        <circle cx="0" cy="-8" r="3.5" fill="#b03878"></circle>
+      </g>
+    </g>
+
+    <g transform="translate(188,102)">
+      <g class="flower sway4">
+        <g fill="#f7a3cc" opacity="0.95">
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(0)"></ellipse>
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(40)"></ellipse>
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(80)"></ellipse>
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(120)"></ellipse>
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(160)"></ellipse>
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(200)"></ellipse>
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(240)"></ellipse>
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(280)"></ellipse>
+          <ellipse cx="0" cy="-17" rx="8.5" ry="15" transform="rotate(320)"></ellipse>
+        </g>
+        <g fill="#ef78b4" opacity="0.95">
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(20)"></ellipse>
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(60)"></ellipse>
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(100)"></ellipse>
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(140)"></ellipse>
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(180)"></ellipse>
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(220)"></ellipse>
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(260)"></ellipse>
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(300)"></ellipse>
+          <ellipse cx="0" cy="-11" rx="6.5" ry="11" transform="rotate(340)"></ellipse>
+        </g>
+        <g fill="#ffc0e0">
+          <ellipse cx="0" cy="-7" rx="4.5" ry="6.5" transform="rotate(10)"></ellipse>
+          <ellipse cx="0" cy="-7" rx="4.5" ry="6.5" transform="rotate(90)"></ellipse>
+          <ellipse cx="0" cy="-7" rx="4.5" ry="6.5" transform="rotate(170)"></ellipse>
+          <ellipse cx="0" cy="-7" rx="4.5" ry="6.5" transform="rotate(250)"></ellipse>
+          <ellipse cx="0" cy="-7" rx="4.5" ry="6.5" transform="rotate(330)"></ellipse>
+        </g>
+        <circle cx="0" cy="-7" r="3.2" fill="#c04080"></circle>
+      </g>
+    </g>
+
+    <g transform="translate(150,68)">
+      <g class="flower sway5">
+        <g fill="#fbb6d6" opacity="0.95">
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(0)"></ellipse>
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(40)"></ellipse>
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(80)"></ellipse>
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(120)"></ellipse>
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(160)"></ellipse>
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(200)"></ellipse>
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(240)"></ellipse>
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(280)"></ellipse>
+          <ellipse cx="0" cy="-21" rx="10.5" ry="19" transform="rotate(320)"></ellipse>
+        </g>
+        <g fill="#ef78b4" opacity="0.95">
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(20)"></ellipse>
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(60)"></ellipse>
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(100)"></ellipse>
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(140)"></ellipse>
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(180)"></ellipse>
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(220)"></ellipse>
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(260)"></ellipse>
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(300)"></ellipse>
+          <ellipse cx="0" cy="-14" rx="8" ry="14" transform="rotate(340)"></ellipse>
+        </g>
+        <g fill="#ffd0e8">
+          <ellipse cx="0" cy="-9" rx="6" ry="8" transform="rotate(10)"></ellipse>
+          <ellipse cx="0" cy="-9" rx="6" ry="8" transform="rotate(90)"></ellipse>
+          <ellipse cx="0" cy="-9" rx="6" ry="8" transform="rotate(170)"></ellipse>
+          <ellipse cx="0" cy="-9" rx="6" ry="8" transform="rotate(250)"></ellipse>
+          <ellipse cx="0" cy="-9" rx="6" ry="8" transform="rotate(330)"></ellipse>
+        </g>
+        <circle cx="0" cy="-9" r="4" fill="#c04080"></circle>
+      </g>
+    </g>
+
+    <g fill="#ffd8ec" opacity="0.9">
+      <circle cx="55" cy="45" r="2"></circle>
+      <circle cx="245" cy="60" r="1.6"></circle>
+      <circle cx="220" cy="20" r="2.2"></circle>
+      <circle cx="45" cy="95" r="1.5"></circle>
+      <circle cx="260" cy="110" r="1.8"></circle>
+    </g>
+  </svg>
+
+  <div class="msg">te amo mi amor</div>
+
+  <div class="footer">
+    <svg class="heart-icon" width="18" height="18" viewBox="0 0 24 24">
+      <path d="M12 21s-7.2-4.6-9.6-9.2C.7 8.3 2.4 4.8 6 4.2c2.1-.4 4 .6 6 3 2-2.4 3.9-3.4 6-3 3.6.6 5.3 4.1 3.6 7.6C19.2 16.4 12 21 12 21z" fill="#ff5a9e"/>
+    </svg>
+    <span>para ti</span>
+  </div>
+</div>
+
+</body>
+</html>
